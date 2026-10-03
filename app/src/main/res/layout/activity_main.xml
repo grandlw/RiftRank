@@ -1,0 +1,19 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.grandl.rankwidget.AuraView android:id="@+id/aura" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center_horizontal" android:padding="24dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="OP.GG profil linki" android:textColor="#D0D7E2" android:textSize="13sp" android:layout_marginTop="16dp"/>
+            <EditText android:id="@+id/profileUrl" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="https://op.gg/tr/lol/summoners/tr/isim-tag" android:singleLine="true" android:inputType="textUri" android:textColor="#FFFFFF" android:textColorHint="#748092"/>
+            <Button android:id="@+id/saveProfile" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Profili kaydet" android:layout_marginTop="8dp"/>
+            <TextView android:id="@+id/player" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" android:textSize="20sp" android:textStyle="bold" android:layout_marginTop="20dp"/>
+            <ImageView android:id="@+id/badge" android:layout_width="150dp" android:layout_height="150dp" android:layout_marginTop="12dp" android:scaleType="fitCenter" android:contentDescription="Rank amblemi"/>
+            <TextView android:id="@+id/rank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FFFFFF" android:textSize="30sp" android:textStyle="bold"/>
+            <TextView android:id="@+id/lp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#DDFCF7" android:textSize="24sp" android:textStyle="bold"/>
+            <TextView android:id="@+id/record" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#D0D7E2" android:textSize="16sp" android:layout_marginTop="10dp"/>
+            <TextView android:id="@+id/delta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#DDFCF7" android:textSize="17sp" android:textStyle="bold" android:layout_marginTop="12dp"/>
+            <Button android:id="@+id/refresh" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Şimdi yenile" android:layout_marginTop="22dp"/>
+            <TextView android:id="@+id/status" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#AEB8C8" android:textSize="13sp" android:gravity="center" android:layout_marginTop="14dp" android:layout_marginBottom="24dp"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
